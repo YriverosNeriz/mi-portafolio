@@ -4,37 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mi-portafolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; background: #aed6f1; padding: 20px; }
-        img { width: 290px; height: 460px; border-radius: 10px;}
-        .container { width: auto; background: #ebf5fb ; padding: 20px; border-radius: 10px; }
+   <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #aed6f1;
+            padding: 20px;
+        }
+        h1 {
+            font-family: 'Poppins', sans-serif; /* Cambiar a una fuente moderna */
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #154360;
+            margin-bottom: 10px;
+        }
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            color: #34495e;
+        }
+        img {
+            width: 290px;
+            height: 460px;
+            border-radius: 10px;
+            margin: 20px auto;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Añadido efecto de sombra */
+            transition: transform 0.3s ease-in-out; /* Efecto hover */
+        }
+        img:hover {
+            transform: scale(1.05); /* Efecto al pasar el ratón */
+        }
+        .container {
+            width: auto;
+            background: #ebf5fb;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra en el contenedor */
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #d5d8dc;
+            margin: 20px 0;
+        }
     </style>
+    <!-- Link para cargar las fuentes modernas -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h1>Yvonne Riveros - Proyectos en Ionic y Angular</h1>
         <p>Ejemplos de diseños implementados para procesos logísticos utilizando PDA (Personal Digital Assistant).</p>
         <hr>
-        <p style="text-align:center";>Diseño de login</p>
-        <img style="text-align:center"; src="login.png" alt="Diseño 1">
+        <p>Diseño de login</p>
+        <img src="login.png" alt="Diseño 1">
 
-        <p style="text-align:center";>Página de administrador</p>
-        <img style="text-align:center"; src="home_facility.png" alt="Diseño 2">
+        <p>Página de administrador</p>
+        <img src="home_facility.png" alt="Diseño 2">
 
-        <p style="text-align:center";>Página de búsqueda</p>
-        <img style="text-align:center"; src="depocargo.png" alt="Diseño 2">
+        <p>Página de búsqueda</p>
+        <img src="depocargo.png" alt="Diseño 3">
 
-        <p style="text-align:center";>Página de acciones</p>
-        <img style="text-align:center"; src="paletizar.png" alt="Diseño 2">
+        <p>Página de acciones</p>
+        <img src="paletizar.png" alt="Diseño 4">
 
-        <p style="text-align:center";>Carga de imagen</p>
-        <img style="text-align:center"; src="load_picture.png" alt="Diseño 2">
+        <p>Carga de imagen</p>
+        <img src="load_picture.png" alt="Diseño 5">
 
-         <p style="text-align:center";>Alerta</p>
-        <img style="text-align:center"; src="present_toast.png" alt="Diseño 2">
+        <p>Alerta</p>
+        <img src="present_toast.png" alt="Diseño 6">
 
-        <p style="text-align:center";>Confirmación</p>
-        <img style="text-align:center"; src="alert_controller.png" alt="Diseño 2">
+        <p>Confirmación</p>
+        <img src="alert_controller.png" alt="Diseño 7">
     </div>
 </body>
 </html>
