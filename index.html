@@ -3,91 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-
-    <!-- Link para cargar las fuentes modernas -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-
-    <style>
-        /* Estilos Generales */
+    <title>mi-portafolio</title>
+   <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background: transparent; /* Deja transparente para ver el slider */
+            background: #aed6f1;
             padding: 20px;
         }
-
-        /* Slider de Imágenes de Fondo */
-        .slider {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-            z-index: -1; /* Para que quede de fondo */
-        }
-
-        .slider img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0;
-            animation: fade 16s infinite; /* 4 imágenes x 4s cada una = 16s de ciclo */
-        }
-
-        .slider img:nth-child(1) { animation-delay: 0s; }
-        .slider img:nth-child(2) { animation-delay: 4s; }
-        .slider img:nth-child(3) { animation-delay: 8s; }
-        .slider img:nth-child(4) { animation-delay: 12s; }
-
-        @keyframes fade {
-            0% { opacity: 0; }
-            10% { opacity: 1; }
-            40% { opacity: 1; }
-            50% { opacity: 0; }
-            100% { opacity: 0; }
-        }
-
-        /* Contenedor Principal */
-        .container {
-            width: auto;
-            background: rgba(255, 255, 255, 0.85); /* Fondo blanco con opacidad */
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-            position: relative;
-            z-index: 10; /* Más alto que el slider */
-        }
-
         h1 {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Poppins', sans-serif; /* Cambiar a una fuente moderna */
             font-size: 2.5rem;
             font-weight: 700;
             color: #154360;
             margin-bottom: 10px;
         }
-
         p {
             font-family: 'Roboto', sans-serif;
             font-size: 1rem;
             color: #34495e;
         }
-
         img {
             width: 290px;
             height: 460px;
             border-radius: 10px;
             margin: 20px auto;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Añadido efecto de sombra */
+            transition: transform 0.3s ease-in-out; /* Efecto hover */
         }
-
         img:hover {
-            transform: scale(1.05);
+            transform: scale(1.05); /* Efecto al pasar el ratón */
         }
-
+        .container {
+            width: auto;
+            background: #ebf5fb;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra en el contenedor */
+        }
         hr {
             border: none;
             height: 1px;
@@ -95,23 +48,14 @@
             margin: 20px 0;
         }
     </style>
+    <!-- Link para cargar las fuentes modernas -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Slider de Imágenes de Fondo -->
-    <div class="slider">
-        <img src="assets/foto1.png" alt="Fondo 1">
-        <img src="assets/foto2.png" alt="Fondo 2">
-        <img src="assets/foto3.png" alt="Fondo 3">
-        <img src="assets/foto4.png" alt="Fondo 4">
-    </div>
-
-    <!-- Contenido Principal -->
     <div class="container">
         <h1>Yvonne Riveros - Proyecto en Ionic y Angular</h1>
         <p>Ejemplos de diseños implementados para procesos logísticos utilizando PDA (Personal Digital Assistant).</p>
         <hr>
-
         <p>Diseño de login</p>
         <img src="login.png" alt="Diseño 1">
 
@@ -136,7 +80,6 @@
         <p>Ejemplo de diseño implementado para página web.</p>
         <hr>
     </div>
-
 </body>
 </html>
 
