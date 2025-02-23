@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mi-portafolio</title>
-   <style>
-        body {
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
             font-family: Arial, sans-serif;
             text-align: center;
             background: #aed6f1;
-            padding: 20px;
-            margin: 0;
+            width: 100%;
+            overflow-x: hidden; /* Evita el desplazamiento horizontal */
         }
         h1 {
             font-family: 'Poppins', sans-serif;
@@ -24,10 +29,10 @@
             font-size: 1rem;
             color: #34495e;
         }
-        /* Tamaño predeterminado para todas las imágenes */
+        /* Tamaño predeterminado para imágenes normales */
         img {
             width: 290px;
-            height: 460px;
+            height: auto;
             border-radius: 10px;
             margin: 20px 0;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -36,9 +41,9 @@
         img:hover {
             transform: scale(1.05);
         }
-        /* Contenedor principal */
+        /* Contenedor principal con ajuste en móviles */
         .container {
-            width: 90%;
+            width: 100%;
             max-width: 800px;
             margin: auto;
             background: #ebf5fb;
@@ -62,7 +67,7 @@
             max-width: 800px;
             height: auto;
         }
-        /* Responsividad en pantallas pequeñas */
+        /* Ajustes responsivos */
         @media screen and (max-width: 768px) {
             img {
                 width: 100%;
